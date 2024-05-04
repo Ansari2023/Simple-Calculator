@@ -1,9 +1,11 @@
 #! /usr/bin/env node
+"use strict";
 //shabang
-import inquirer from "inquirer";
-const answer = await inquirer.prompt([
+Object.defineProperty(exports, "__esModule", { value: true });
+var inquirer_1 = require("inquirer");
+var answer = await inquirer_1.default.prompt([
     { message: "enter your first number", type: "number", name: "firstNumber" },
-    { message: "enter second number", type: "number", name: "secondNumber" },
+    { message: "enter your Second Number", type: "number", name: "secondNumber" },
     { message: "select one of the operators to parform action", type: "list", name: "operator", choices: ["Addition", "Subtraction", "Maltiplication", "Division"], }
 ]);
 // console.log(answer);
